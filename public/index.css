@@ -1,0 +1,113 @@
+ /* index.css */
+
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f7f8;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  background-color: #b92b27;
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Container */
+.post {
+  background: #fff;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Username & Content */
+.username {
+  color: #b92b27;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.content {
+  color: #333;
+  margin: 8px 0 15px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Buttons & Links */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #b92b27;
+  background-color: #fff;
+  border: 1px solid #b92b27;
+  padding: 6px 14px;
+  margin: 5px 8px 5px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  background-color: #b92b27;
+  color: #fff;
+}
+
+/* Delete Button */
+form {
+  display: inline-block;
+}
+
+button {
+  background-color: #fff;
+  color: #b92b27;
+  border: 1px solid #b92b27;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #b92b27;
+  color: #fff;
+}
+
+/* Create New Post Button (Bottom) */
+a[href*="new"] {
+  display: block;
+  text-align: center;
+  max-width: 200px;
+  margin: 30px auto;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .post {
+    margin: 15px;
+    padding: 15px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
